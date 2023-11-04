@@ -188,7 +188,6 @@ orcid = "<orcid_userid>"
 mastodon_username = "<mastadon_username>"
 mastodon_server = "<mastodon_server>" (if not set, defaults to mastodon.social)
 
-
 # To add google analytics
 [extra.analytics]
 google = "<your_gtag>"

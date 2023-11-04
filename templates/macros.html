@@ -16,6 +16,14 @@
   </a>
   {% endif %}
 
+  {% if social_config.bluesky %}
+  <a class="has-text-bluesky" href="https://bsky.app/profile/{{ social_config.bluesky }}" target="_blank">
+    <span class="icon is-large" title="Bluesky">
+      <i class="fa-solid fa-cloud-sun"></i>
+    </span>
+  </a>
+  {% endif %}
+
   {% if social_config.linkedin %}
   <a class="has-text-linkedin" href="https://www.linkedin.com/in/{{ social_config.linkedin }}" target="_blank">
     <span class="icon is-large" title="LinkedIn">
