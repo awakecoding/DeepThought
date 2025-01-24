@@ -200,7 +200,8 @@
   {% endif %}
 
   {% if config.generate_feed %}
-  <a class="has-text-rss" href="{{ config.base_url }}/{{ config.feed_filenames[0] }}" target="_blank">
+  {% set feed_url = config.base_url ~ '/' ~ config.feed_filenames[0] %}
+  <a class="has-text-rss" href="{{ feed_url | safe }}" target="_blank">
     <span class="icon is-large" title="RSS Feed">
       <i class="fas fa-rss fa-lg"></i>
     </span>

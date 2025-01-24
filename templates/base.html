@@ -28,6 +28,9 @@
   {% endif %}
   {% endif %}
 
+  {% block head_extra %}
+  {% endblock head_extra %}
+
   {% if config.extra.favicon.webmanifest %}
   <link href='{{ config.extra.favicon.webmanifest }}' rel="manifest" />
   {% endif %}
