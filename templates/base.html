@@ -9,6 +9,14 @@
   <meta content="#ffffff" name="theme-color" />
   <meta content="#da532c" name="msapplication-TileColor" />
 
+  {% if page -%}
+  <link rel="canonical" href="{{ page.permalink | safe }}">
+  <link rel="alternate" href="{{ page.permalink | safe }}" hreflang="en" />
+  {% elif section -%}
+  <link rel="canonical" href="{{ section.permalink | safe }}">
+  <link rel="alternate" href="{{ section.permalink | safe }}" hreflang="en" />
+  {% endif -%}
+
   {% if page %}
   <meta name="description" content="{{ page.description }}" />
   <meta property="og:title" content="{{ page.title }}" />
